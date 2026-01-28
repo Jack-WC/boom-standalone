@@ -1,6 +1,7 @@
 package boom.system
 
-import freechips.rocketchip.config.{Config}
+import org.chipsalliance.cde.config.{Config}
+// import freechips.rocketchip.config.{Config}
 import freechips.rocketchip.system.BaseConfig
 import freechips.rocketchip.subsystem.WithCoherentBusTopology
 
@@ -53,6 +54,72 @@ class OctaSmallBoomConfig extends Config(
   new WithCoherentBusTopology ++
   new freechips.rocketchip.system.BaseConfig)
 
+class _1smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(1) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _2smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(2) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _4smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(4) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _6smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(6) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _8smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(8) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _12smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(12) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _16smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(16) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _24smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(24) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _32smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(32) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+  class _48smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(48) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+
+  class _64smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(64) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+  class _80smallBoomConfig extends Config(
+  new boom.common.WithNSmallBooms(80) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _96smallBoomConfig extends Config(
+  new boom.common.WithCloneBoomTiles(96) ++                          // 8 small boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
 
 class DualLargeBoomConfig extends Config(
    new boom.common.WithNLargeBooms(2) ++                          // 2 large boom cores
@@ -95,6 +162,70 @@ class OctaMegaBoomConfig extends Config(
    new boom.common.WithNMegaBooms(8) ++                          // 8 mega boom cores
    new WithCoherentBusTopology ++
    new freechips.rocketchip.system.BaseConfig)
+
+
+// custom boom configs
+class _4megaBoomConfig extends Config(
+   new boom.common.WithCloneBoomTiles(3, 0) ++  
+   new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+   new WithCoherentBusTopology ++
+   new freechips.rocketchip.system.BaseConfig)
+
+
+class _6megaBoomConfig extends Config(
+   new boom.common.WithCloneBoomTiles(5, 0) ++  
+   new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+   new WithCoherentBusTopology ++
+   new freechips.rocketchip.system.BaseConfig)
+
+
+class _8megaBoomConfig extends Config(
+   new boom.common.WithCloneBoomTiles(7, 0) ++  
+   new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+   new WithCoherentBusTopology ++
+   new freechips.rocketchip.system.BaseConfig)
+
+
+class _16megaBoomConfig extends Config(
+  new boom.common.WithCloneBoomTiles(15, 0) ++
+  new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _24megaBoomConfig extends Config(
+  new boom.common.WithCloneBoomTiles(23, 0) ++
+  new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _32megaBoomConfig extends Config(
+  new boom.common.WithCloneBoomTiles(31, 0) ++
+  new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _40megaBoomConfig extends Config(
+  new boom.common.WithCloneBoomTiles(39, 0) ++
+  new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _48megaBoomConfig extends Config(
+  new boom.common.WithCloneBoomTiles(47, 0) ++
+  new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+class _96megaBoomConfig extends Config(
+  new boom.common.WithCloneBoomTiles(95, 0) ++
+  new boom.common.WithNMegaBooms(1) ++                          // 4 mega boom cores
+  new WithCoherentBusTopology ++
+  new freechips.rocketchip.system.BaseConfig)
+
+// class _96megaBoomConfig extends Config(
+//   new boom.common.WithNMegaBooms(96) ++                          // 4 mega boom cores
+//   new WithCoherentBusTopology ++
+//   new freechips.rocketchip.system.BaseConfig)
 
 
 

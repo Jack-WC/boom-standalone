@@ -4,3 +4,9 @@
 [submodule "rocket-chip"]
 	path = rocket-chip
 	url = https://github.com/chipsalliance/rocket-chip.git
+[submodule "testchipip"]
+	path = testchipip
+	url = https://github.com/ucb-bar/testchipip.git
+[submodule "rocket-chip-blocks"]
+	path = rocket-chip-blocks
+	url = https://github.com/chipsalliance/rocket-chip-blocks.git
